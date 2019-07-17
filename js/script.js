@@ -7,20 +7,20 @@
 
              function computerPlay(){
                 let rand= Math.floor(Math.random() *3);
-                
+                let computerChoiceSpan = document.getElementById("computer");
                 if(rand === 2){
-                    console.log("CPU: rock");
+                    computerChoiceSpan.innerHTML = "CPU: rock";
                     computerSelection="rock";
                     return computerSelection;
                     
                 } else if(rand==1){
-                    console.log("CPU: paper");
+                    computerChoiceSpan.innerHTML ="CPU: paper";
                     computerSelection="paper";
                     return computerSelection;
                     
                     
                 }else {
-                    console.log("CPU: Scissors");
+                    computerChoiceSpan.innerHTML = "CPU: Scissors";
                     computerSelection="scissors";
                     return computerSelection;
                     
@@ -28,7 +28,6 @@
                 }
             }
 
-            let resultsDiv = document.getElementById("results-div")
             let results = document.getElementById("results")
             
 
