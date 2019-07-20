@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #7A9D96;
+    margin: 0;
+    padding:50px;
+}
+
+#container{
+    background-color: white;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
+}
+
+button{
+    padding: 30px;
+    width: 9rem;
+    background-color: lightgoldenrodyellow;
+    /* font-weight: 800; */
+    font-size: 1.5em;
+}
+
+#results-container{
+    margin: 0 auto;
+}
