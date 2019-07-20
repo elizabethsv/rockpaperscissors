@@ -80,13 +80,19 @@
 const buttons = document.querySelectorAll('button');
 
 //iterate through each function and each time the button is pressed a round is played 
+
 buttons.forEach((button) => {
   button.addEventListener('click', (e) => {
     playerSelection=e.target.value;
-   console.log(playerSelection);
-   let computerSelection = computerPlay();
+    let computerSelection = computerPlay();
     playRound(playerSelection, computerSelection);
+    results.classList.add("resultsAnimation"); 
+    results.addEventListener('transitionend', () => {
+        results.classList.remove("resultsAnimation");
+        results.classList.add("resultsAnimationAfter")
+      })
+    results.classList.remove("resultsAnimationAfter")
 })
 })
-;
+
 

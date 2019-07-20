@@ -38,7 +38,7 @@ button{
 span{
     display: block;
     margin:10px auto;
-
+    text-align:center;
 }
 
 #computer{
@@ -46,5 +46,15 @@ span{
 }
 
 #results {
-    
+    font-size: 2em;
+
+}
+
+.resultsAnimation{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+.resultsAnimationAfter{
+    transform: scale(1);
+    transition: 1s ease-out
 }
