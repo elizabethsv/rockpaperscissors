@@ -5,6 +5,7 @@ body{
     background-color: #7A9D96;
     margin: 0;
     padding:50px;
+    font-family:'Fjalla One', sans-serif;
 }
 
 #container{
@@ -32,4 +33,18 @@ button{
 
 #results-container{
     margin: 0 auto;
+}
+
+span{
+    display: block;
+    margin:10px auto;
+
+}
+
+#computer{
+    color: #777
+}
+
+#results {
+    
 }
